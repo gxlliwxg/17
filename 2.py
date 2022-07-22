@@ -1,10 +1,10 @@
-f = open('2.txt')
+file = open('2.txt')
 mas = []
-for i in f:
-    s = int(i)
-    mas.append(s)
-k = 0
-maxx = 0
+for i in file:
+    st = int(i)
+    mas.append(st)
+count = 0
+maxs = 0
 for i in range(len(mas)-1):
     if mas[i] % 16 == 0 and mas[i] % 24 == 0:
         if mas[i+1] % 18 == 0 and mas[i+1] % 24 == 0 and mas[i+1] % 10 == 8:
