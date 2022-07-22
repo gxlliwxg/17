@@ -3,7 +3,6 @@ mas = []
 for i in f:
     s = int(i)
     mas.append(s)
-#print(mas)
 k = 0
 maxx = 0
 for i in range(len(mas)-1):
