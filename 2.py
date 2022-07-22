@@ -6,10 +6,9 @@ for i in f:
 k = 0
 maxx = 0
 for i in range(len(mas)-1):
-    zm = mas[i]
-    gr = mas[i+1]
-    if zm % 16 == 0 and zm % 24 == 0:
-        if gr % 18 == 0 and gr % 24 == 0 and gr % 10 == 8:
-            k += 1
-            maxx = max(maxx, zm + gr)
-print(k, maxx)
+    if mas[i] % 16 == 0 and mas[i] % 24 == 0:
+        if mas[i+1] % 18 == 0 and mas[i+1] % 24 == 0 and mas[i+1] % 10 == 8:
+            count += 1
+            maxs = max(maxs, mas[i] + mas[i+1])
+print(count, maxs)
+
