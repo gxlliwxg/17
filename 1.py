@@ -1,5 +1,5 @@
 mas = []
-file = open('nomera.txt')
+file = open('1.txt')
 for i in file:
     st = int(i)
     mas.append(st)
